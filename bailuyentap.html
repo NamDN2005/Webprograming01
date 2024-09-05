@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Sinh viên</title>
+    <link rel="stylesheet" href="bailuyentap.css">
+</head>
+<body>
+    <h1>Quản lý Sinh viên</h1>
+    <div class="form-container">
+        <h2>Thêm/Sửa Sinh viên</h2>
+        <form id="studentForm">
+            <input type="hidden" id="studentId">
+            <div>
+                <label for="studentCode">Mã sinh viên:</label>
+                <input type="text" id="studentCode" required>
+            </div>
+            <div>
+                <label for="fullName">Họ tên:</label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div>
+                <label for="gender">Giới tính:</label>
+                <select id="gender" required>
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                </select>
+            </div>
+            <div>
+                <label for="dob">Ngày sinh:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div>
+                <label for="hometown">Quê quán:</label>
+                <input type="text" id="hometown" required>
+            </div>
+            <button type="submit">Lưu</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <h2>Danh sách Sinh viên</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Mã sinh viên</th>
+                    <th>Họ tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Quê quán</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dữ liệu sinh viên sẽ được thêm tại đây -->
+
+
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="bailuyentap.js"></script>
+</body>
+</html>
